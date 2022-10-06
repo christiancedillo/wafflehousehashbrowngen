@@ -21,8 +21,12 @@ var email = ""
 var zip = randomdata.PostalCode("SE")
 
 func main() {
+	fmt.Println("Initializing... ")
+
 	fmt.Print("Enter Email: ")
 	fmt.Scan(&email)
+
+	fmt.Println("Submitting Form...")
 
 	data := url.Values{
 		"fn":        {fn},
